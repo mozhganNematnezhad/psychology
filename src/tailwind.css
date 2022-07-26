@@ -34,7 +34,7 @@ button {
   outline: none;
 }
 
-/*  */
+/* components */
 
 @layer components {
   .esang-squre {
@@ -70,18 +70,49 @@ button {
     @apply bg-white  w-[270px]  md:w-[440px] md:h-[222px] absolute top-[4rem]  rounded-[10px];
   }
 
-  .esang-section6 .esange-score{
-    @apply w-[70px] h-[90px] bg-[#2abb9c] rounded-[10px] font-black text-[56px] text-white py-[0.3rem] px-[1rem] 
+   .esange-linerback {
+     @apply bg-gradient-to-l from-[#2abb9c26] to-[#ffffff00] w-[25%] h-[56px]  rounded-lg 
   }
 
-  .esang-section7 .esang-box{
-    @apply bg-white shadow-[0px_6px_25px_rgba(187,187,187,0.5)] rounded-[10px] w-[310px] my-4 lg:my-0
+  .esang-section6 .esange-score {
+    @apply w-[70px] h-[90px] bg-[#2abb9c] rounded-[10px] font-black text-[56px] text-white py-[0.3rem] px-[1rem];
   }
 
-  .esang-section10 th{
-    @apply rounded-[5px] bg-[#F3F4F6] px-6 py-4 text-Main-text font-black text-[24px]
+  .esang-section7 .esang-box {
+    @apply bg-white shadow-[0px_6px_25px_rgba(187,187,187,0.5)] rounded-[10px] w-[310px] my-4 lg:my-0;
   }
-  .esang-section10 td{
-    @apply rounded-[5px]  px-6 py-4 text-xl font-normal text-[#334155]
+
+  .esang-section10 th {
+    @apply rounded-[5px] bg-[#F3F4F6] px-6 py-4 text-Main-text font-black text-base md:text-[20px] lg:text-[24px];
   }
+  .esang-section10 td {
+    @apply rounded-[5px]  px-6 py-4 text-base md:text-xl font-normal text-[#334155];
+  }
+  .esang-section10 .td {
+    @apply text-white bg-[#2ABB9C]   shadow-[0px_4px_25px_rgba(0,0,0,0.25)];
+  }
+
+  .esange-table11 table th {
+    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-black text-lg md:text-[24px] text-Main-text;
+  }
+  .esange-table11 .esang-tdright {
+    @apply px-6 py-4 font-normal text-base md:text-xl text-Main-text  bg-white border border-solid border-[#d7d7d7] rounded-[5px];
+  }
+  .esange-table11 .esange-tdleft {
+    @apply font-normal text-base md:text-xl text-Main-text  border-r-[3px] border-solid  rounded-[5px]  py-4;
+  }
+
+  .esang-section17 .esang-box17{
+    @apply bg-[rgba(42,187,156,0.12)] rounded-[10px]
+  }
+  .esang-section17 .esang-box17 .esange-squreLittle{
+    @apply bg-[#2abb9c] border border-solid border-[rgba(51,65,85,0.08)] rounded-[10px]
+     w-[93px] h-[93px] mx-auto mt-10 text-white shadow-[0px_6px_20px_rgba(187,187,187,0.5)]
+     flex justify-center items-center flex-row-reverse;
+  }
+
+  .esang-section18 li{
+    @apply flex items-center py-2 font-light text-base md:text-xl md:leading-[40px] text-Main-text 
+  }
+
 }
