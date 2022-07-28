@@ -180,6 +180,20 @@ button {
   }
   /* end accordian */
 
+  .esang-section25 .esange-pdf {
+    @apply bg-white border border-solid border-[rgba(51,65,85,0.08)]
+    shadow-[10px_6px_15px_rgba(187,187,187,0.25)] w-[20%] mt-4 rounded-[10px];
+  }
 
+  .esange-section26 .content {
+    @apply border border-[rgba(51,65,85,0.08)] rounded-[15px]  shadow-[10px_6px_15px_rgba(187,187,187,0.25)];
+  }
 
+  .esange-section26 .btnslider1 {
+    @apply bg-[rgba(255,255,255,0.3)] font-black text-lg text-white rounded-[15px] m-4 
+    px-[5rem] py-[0.8rem] 
+    md:py-[0.6rem] md:px-[3rem] 
+    lg:px-[5.9rem] lg:py-[0.8rem] 
+    xl:px-[6.9rem] xl:py-[0.8rem];
+  }
 }
