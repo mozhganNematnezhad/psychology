@@ -4,8 +4,28 @@
 
 /* font */
 @font-face {
-  font-family: IranYekan;
-  src: url("../Assests/fonts/IRANYekanMediumFaNum.ttf");
+  font-family: IranYekanBakhlight;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 03\ LIGHT.TTF");
+}
+@font-face {
+  font-family: IranYekanbakhRegular;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 04\ REGULAR.TTF");
+}
+@font-face {
+  font-family: IranYekanbakhMedium;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 05\ MEDIUM.TTF");
+}
+@font-face {
+  font-family: IranYekanbakhbold;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 06\ BOLD.TTF");
+}
+@font-face {
+  font-family: IranYekanbakhheavy;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 07\ HEAVY.TTF");
+}
+@font-face {
+  font-family: IranYekanbakhfat;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 08\ FAT.TTF");
 }
 /* end font-face */
 
@@ -17,7 +37,7 @@
 
 body {
   /* background-color: #f5f5f5; */
-  font-family: "IranYekan";
+  font-family: "IranYekanbakhRegular";
   overflow-x: hidden;
 }
 
