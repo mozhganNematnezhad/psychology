@@ -1,0 +1,7 @@
+@font-face {
+    font-family: YekanBKFat;
+    src: url('../Assests/fonts/YEKANBAKHEN08FAT.TTF');
+}
+.bk-fat {
+    font-family: YekanBKFat;
+}
