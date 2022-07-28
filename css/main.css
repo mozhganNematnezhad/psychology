@@ -6,7 +6,7 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
-@import url('font.css');
+
 *,
 ::before,
 ::after {
@@ -595,8 +595,8 @@ video {
   padding-bottom: 0.2rem;
   padding-left: 1.1rem;
   padding-right: 1.1rem;
+  font-family: 'IranYekanbakhMedium';
   font-size: 14px;
-  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -620,6 +620,7 @@ video {
   border-radius: 5px;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+  font-family: 'IranYekanbakhMedium';
 }
 
 .esang-icon img {
@@ -636,9 +637,9 @@ video {
   padding-bottom: 0.2rem;
   padding-left: 1.1rem;
   padding-right: 1.1rem;
+  font-family: 'IranYekanbakhMedium';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -695,8 +696,8 @@ video {
   padding-bottom: 0.3rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-family: 'iranYekanbakhfat';
   font-size: 56px;
-  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -728,9 +729,9 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'iranYekanbakhfat';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -753,9 +754,9 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'IranYekanbakhRegular';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -785,9 +786,9 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'iranYekanbakhfat';
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -830,9 +831,9 @@ video {
   border-style: solid;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'IranYekanbakhRegular';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -877,9 +878,9 @@ video {
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-family: 'iranYekanbakhlight';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 300;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -921,9 +922,9 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'iranYekanbakhfat';
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -946,9 +947,9 @@ video {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-family: 'IranYekanbakhRegular';
   font-size: 1rem;
   line-height: 1.5rem;
-  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
@@ -1099,9 +1100,9 @@ details[open] summary p {
   padding-right: 5rem;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
+  font-family: 'iranYekanbakhfat';
   font-size: 1.125rem;
   line-height: 1.75rem;
-  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1466,6 +1467,10 @@ details[open] summary p {
   padding: 2rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1509,10 +1514,6 @@ details[open] summary p {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .pt-\[0\.5rem\] {
@@ -1563,16 +1564,44 @@ details[open] summary p {
   text-align: end;
 }
 
-.font-\[\"Estedad-FD-Bold\.ttf\"\] {
-  font-family: "Estedad-FD-Bold.ttf";
+.font-\[\'IranYekanbakhheavy\'\] {
+  font-family: 'IranYekanbakhheavy';
 }
 
-.font-\[\"\"\] {
-  font-family: "";
+.font-\[\'IranYekanbakhfat\'\] {
+  font-family: 'IranYekanbakhfat';
 }
 
-.font-\[\"IranYekanbakhheavy\"\] {
-  font-family: "IranYekanbakhheavy";
+.font-\[\'IranYekanbakhbold\'\] {
+  font-family: 'IranYekanbakhbold';
+}
+
+.font-\[\'IranYekanbakhMedium\'\] {
+  font-family: 'IranYekanbakhMedium';
+}
+
+.font-\[\'IranYekanBakhlight\'\] {
+  font-family: 'IranYekanBakhlight';
+}
+
+.font-\[\'IranYekanbakhRegular\'\] {
+  font-family: 'IranYekanbakhRegular';
+}
+
+.font-\[IranYekanbakhfat\] {
+  font-family: IranYekanbakhfat;
+}
+
+.font-\[\'iranYekanbakhfat\'\] {
+  font-family: 'iranYekanbakhfat';
+}
+
+.font-\[iranYekanbakhfat\] {
+  font-family: iranYekanbakhfat;
+}
+
+.font-\[\'iranYekanbakhlight\'\] {
+  font-family: 'iranYekanbakhlight';
 }
 
 .text-base {
@@ -1627,24 +1656,8 @@ details[open] summary p {
   font-size: 42px;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-black {
   font-weight: 900;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-normal {
-  font-weight: 400;
 }
 
 .leading-\[40px\] {
@@ -1698,6 +1711,11 @@ details[open] summary p {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity));
 }
 
 .text-\[\#FFA200\] {
@@ -1763,6 +1781,12 @@ details[open] summary p {
   font-family: IranYekanbakhfat;
 
   src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 08\ FAT.TTF");
+}
+
+@font-face {
+  font-family: IranYekanbakhhairline;
+
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 01\ HAIRLINE.TTF");
 }
 
 /* end font-face */
