@@ -70,8 +70,8 @@ button {
     @apply bg-white  w-[270px]  md:w-[440px] md:h-[222px] absolute top-[4rem]  rounded-[10px];
   }
 
-   .esange-linerback {
-     @apply bg-gradient-to-l from-[#2abb9c26] to-[#ffffff00] w-[25%] h-[56px]  rounded-lg 
+  .esange-linerback {
+    @apply bg-gradient-to-l from-[#2abb9c26] to-[#ffffff00] w-[25%] h-[56px]  rounded-lg;
   }
 
   .esang-section6 .esange-score {
@@ -102,17 +102,84 @@ button {
     @apply font-normal text-base md:text-xl text-Main-text  border-r-[3px] border-solid  rounded-[5px]  py-4;
   }
 
-  .esang-section17 .esang-box17{
-    @apply bg-[rgba(42,187,156,0.12)] rounded-[10px]
+  .esang-section17 .esang-box17 {
+    @apply bg-[rgba(42,187,156,0.12)] rounded-[10px];
   }
-  .esang-section17 .esang-box17 .esange-squreLittle{
+  .esang-section17 .esang-box17 .esange-squreLittle {
     @apply bg-[#2abb9c] border border-solid border-[rgba(51,65,85,0.08)] rounded-[10px]
      w-[93px] h-[93px] mx-auto mt-10 text-white shadow-[0px_6px_20px_rgba(187,187,187,0.5)]
      flex justify-center items-center flex-row-reverse;
   }
 
-  .esang-section18 li{
-    @apply flex items-center py-2 font-light text-base md:text-xl md:leading-[40px] text-Main-text 
+  .esang-section18 li {
+    @apply flex items-center py-2 font-light text-base md:text-xl md:leading-[40px] text-Main-text;
   }
+
+  .esang-section20 .esang-jobwork {
+    @apply bg-white border border-solid border-[#d7d7d7] rounded-[10px] flex-col flex md:flex-row items-center px-4;
+  }
+
+  .esange-table21 table th {
+    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-black text-lg md:text-[24px] text-Main-text;
+  }
+  .esange-table21 td {
+    @apply px-6 py-4 font-normal text-base md:text-xl text-Main-text  bg-white border border-solid border-[#d7d7d7] rounded-[5px];
+  }
+
+  .esang-section22 .esang-intelligence {
+    @apply bg-white border border-solid border-[#d7d7d7] rounded-[10px] flex-col flex md:flex-row items-center px-4;
+  }
+
+  /* ---accordian ----*/
+  details summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  details[open] summary {
+    @apply bg-white text-[#2abb9c];
+  }
+
+  details[open] summary::after {
+    content: "-";
+  }
+
+  details[open] summary ~ * {
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  details[open] summary p {
+    opacity: 0;
+    animation-name: showContent;
+    animation-duration: 0.6s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    margin: 0;
+  }
+
+  @keyframes showContent {
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to {
+      opacity: 1;
+      height: auto;
+    }
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+
+    to {
+      opacity: 1;
+      height: auto;
+    }
+  }
+  /* end accordian */
+
+
 
 }
