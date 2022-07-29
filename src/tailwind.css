@@ -27,6 +27,10 @@
   font-family: IranYekanbakhfat;
   src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 08\ FAT.TTF");
 }
+@font-face {
+  font-family: IranYekanbakhhairline;
+  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 01\ HAIRLINE.TTF");
+}
 /* end font-face */
 
 * {
@@ -65,12 +69,12 @@ button {
   }
 
   .esang-section1 .esang-left span {
-    @apply text-[14px] md:text-[12px] lg:text-[14px] font-medium text-Main-text bg-[#F3F4F6] 
+    @apply text-[14px] md:text-[12px] lg:text-[14px] font-['IranYekanbakhMedium'] text-Main-text bg-[#F3F4F6] 
     rounded-[5px] py-[0.2rem] px-[1.1rem];
   }
 
   .esang-icon button {
-    @apply bg-[#F3F4F6]  flex justify-center items-center rounded-[5px];
+    @apply bg-[#F3F4F6]  flex justify-center items-center rounded-[5px] font-['IranYekanbakhMedium'];
   }
 
   .esang-icon img {
@@ -78,7 +82,7 @@ button {
   }
 
   .esang-icon span {
-    @apply py-[0.2rem] px-[1.1rem]  text-base font-medium text-Main-text;
+    @apply py-[0.2rem] px-[1.1rem]  text-base font-['IranYekanbakhMedium'] text-Main-text;
   }
 
   .esang-backgreen,
@@ -95,7 +99,7 @@ button {
   }
 
   .esang-section6 .esange-score {
-    @apply w-[70px] h-[90px] bg-[#2abb9c] rounded-[10px] font-black text-[56px] text-white py-[0.3rem] px-[1rem];
+    @apply w-[70px] h-[90px] bg-[#2abb9c] rounded-[10px] font-['iranYekanbakhfat'] text-[56px] text-white py-[0.3rem] px-[1rem];
   }
 
   .esang-section7 .esang-box {
@@ -103,23 +107,23 @@ button {
   }
 
   .esang-section10 th {
-    @apply rounded-[5px] bg-[#F3F4F6] px-6 py-4 text-Main-text font-black text-base md:text-[20px] lg:text-[24px];
+    @apply rounded-[5px] bg-[#F3F4F6] px-6 py-4 text-Main-text  font-['iranYekanbakhfat'] text-base md:text-[20px] lg:text-[24px];
   }
   .esang-section10 td {
-    @apply rounded-[5px]  px-6 py-4 text-base md:text-xl font-normal text-[#334155];
+    @apply rounded-[5px]  px-6 py-4 text-base md:text-xl font-['IranYekanbakhRegular'] text-[#334155];
   }
   .esang-section10 .td {
     @apply text-white bg-[#2ABB9C]   shadow-[0px_4px_25px_rgba(0,0,0,0.25)];
   }
 
   .esange-table11 table th {
-    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-black text-lg md:text-[24px] text-Main-text;
+    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-['iranYekanbakhfat'] text-lg md:text-[24px] text-Main-text;
   }
   .esange-table11 .esang-tdright {
     @apply px-6 py-4 font-normal text-base md:text-xl text-Main-text  bg-white border border-solid border-[#d7d7d7] rounded-[5px];
   }
   .esange-table11 .esange-tdleft {
-    @apply font-normal text-base md:text-xl text-Main-text  border-r-[3px] border-solid  rounded-[5px]  py-4;
+    @apply font-['IranYekanbakhRegular'] text-base md:text-xl text-Main-text  border-r-[3px] border-solid  rounded-[5px]  py-4;
   }
 
   .esang-section17 .esang-box17 {
@@ -132,7 +136,7 @@ button {
   }
 
   .esang-section18 li {
-    @apply flex items-center py-2 font-light text-base md:text-xl md:leading-[40px] text-Main-text;
+    @apply flex items-center py-2 font-['iranYekanbakhlight'] text-base md:text-xl md:leading-[40px] text-Main-text;
   }
 
   .esang-section20 .esang-jobwork {
@@ -140,10 +144,10 @@ button {
   }
 
   .esange-table21 table th {
-    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-black text-lg md:text-[24px] text-Main-text;
+    @apply px-6 py-4 bg-[#F3F4F6] rounded-[5px] font-['iranYekanbakhfat'] text-lg md:text-[24px] text-Main-text;
   }
   .esange-table21 td {
-    @apply px-6 py-4 font-normal text-base md:text-xl text-Main-text  bg-white border border-solid border-[#d7d7d7] rounded-[5px];
+    @apply px-6 py-4 font-['IranYekanbakhRegular'] text-base md:text-xl text-Main-text  bg-white border border-solid border-[#d7d7d7] rounded-[5px];
   }
 
   .esang-section22 .esang-intelligence {
@@ -210,7 +214,7 @@ button {
   }
 
   .esange-section26 .btnslider1 {
-    @apply bg-[rgba(255,255,255,0.3)] font-black text-lg text-white rounded-[15px] m-4 
+    @apply bg-[rgba(255,255,255,0.3)] font-['iranYekanbakhfat'] text-lg text-white rounded-[15px] m-4 
     px-[5rem] py-[0.8rem] 
     md:py-[0.6rem] md:px-[3rem] 
     lg:px-[5.9rem] lg:py-[0.8rem] 
