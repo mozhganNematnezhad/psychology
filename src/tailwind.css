@@ -61,6 +61,32 @@ button {
 /* components */
 
 @layer components {
+  .esange-backdrop {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 65, 85, 0.4),
+        rgba(51, 65, 85, 0.4)
+      ),
+      rgba(51, 65, 85, 0.4) !important;
+    width: 30%;
+  }
+
+  .esange-navsidbar {
+    background: linear-gradient(0deg, #ffffff, #ffffff), rgba(51, 65, 85, 0.4);
+    width: 30%;
+  }
+  .esange-navsidbar .esange-titleside {
+   @apply border-b border-solid border-[#d7d7d7] p-4
+  }
+
+
+  .esange-navsidbar li {
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] w-72	 mx-auto py-4;
+  }
+
+  /* end navbar */
+
+
   .esang-squre {
     @apply mx-auto md:mx-0 bg-[#334155] flex w-[125px] h-[125px] rounded-[10px] border-[3px] border-solid border-[#f3f4f6];
   }
@@ -220,4 +246,11 @@ button {
     lg:px-[5.9rem] lg:py-[0.8rem] 
     xl:px-[6.9rem] xl:py-[0.8rem];
   }
+}
+
+@layer utilities{
+  .esange-navsidbar li:hover {
+    @apply text-[#2ABB9C] transition-all duration-500 ease-in;
+  }
+
 }
