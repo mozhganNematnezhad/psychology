@@ -1174,7 +1174,6 @@ details[open] summary p {
 
 .esang-section25 .esange-pdf {
   margin-top: 1rem;
-  width: 20%;
   border-radius: 10px;
   border-width: 1px;
   border-style: solid;
@@ -1184,6 +1183,12 @@ details[open] summary p {
   --tw-shadow: 10px 6px 15px rgba(187,187,187,0.25);
   --tw-shadow-colored: 10px 6px 15px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .esang-section25 .esange-pdf {
+    width: 20%;
+  }
 }
 
 .esange-section26 .content {
@@ -1285,12 +1290,12 @@ details[open] summary p {
   left: 2rem;
 }
 
-.z-40 {
-  z-index: 40;
-}
-
 .z-30 {
   z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
 }
 
 .m-4 {
@@ -1381,6 +1386,10 @@ details[open] summary p {
 
 .mb-3 {
   margin-bottom: 0.75rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .inline-block {

@@ -1283,7 +1283,7 @@
   </div>
 
   <!-- section26 -->
-  <div class="esange-section26 md:max-w-[1080px] mt-20 mx-4 xl:mx-auto">
+  <div class="esange-section26 md:max-w-[1080px] mt-20 mx-4 xl:mx-auto mb-12">
     <div class="swiper mySwiper1">
       <div class="swiper-wrapper">
         <!-- 1 -->
@@ -1372,6 +1372,7 @@
         </div>
 
       </div>
+      <div class="swiper-pagination"></div>
     </div>
 
   </div>
@@ -1451,6 +1452,10 @@
             slidesPerView: 3,
             spaceBetween: 20,
           },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
         
       });

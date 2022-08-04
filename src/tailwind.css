@@ -103,7 +103,7 @@ button {
   /* end navbar */
 
 
-  
+
   .esang-squre {
     @apply mx-auto md:mx-0 bg-[#334155] flex w-[125px] h-[125px] rounded-[10px] border-[3px] border-solid border-[#f3f4f6];
   }
@@ -249,7 +249,7 @@ button {
 
   .esang-section25 .esange-pdf {
     @apply bg-white border border-solid border-[rgba(51,65,85,0.08)]
-    shadow-[10px_6px_15px_rgba(187,187,187,0.25)] w-[20%] mt-4 rounded-[10px];
+    shadow-[10px_6px_15px_rgba(187,187,187,0.25)] md:w-[20%] mt-4 rounded-[10px];
   }
 
   .esange-section26 .content {
