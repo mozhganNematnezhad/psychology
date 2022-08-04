@@ -61,6 +61,49 @@ button {
 /* components */
 
 @layer components {
+  .esange-backdrop {
+    background: linear-gradient(
+        0deg,
+        rgba(51, 65, 85, 0.4),
+        rgba(51, 65, 85, 0.4)
+      ),
+      rgba(51, 65, 85, 0.4) !important;
+    /* width: 30%; */
+  }
+
+  .esange-navsidbar {
+    background: linear-gradient(0deg, #ffffff, #ffffff), rgba(51, 65, 85, 0.4);
+    /* width: 30%; */
+  }
+
+  .esang-header button{
+    border-left: 1px solid #d7d7d7
+  }
+
+  .esang-header button:last-of-type {
+    border-left: none;
+  }
+  .esange-navsidbar .esange-titleside {
+   @apply border-b border-solid border-[#d7d7d7] p-4
+  }
+  .esange-navsidbar3 .esange-titleside {
+   @apply border-b border-solid border-[#d7d7d7] p-4 
+  }
+
+
+  .esange-navsidbar li {
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] w-72	 mx-4 py-4;
+  }
+  .esange-navsidbar3 li {
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] mx-8 py-4 flex items-center justify-between;
+  }
+  .esange-navsidbar3 li:last-of-type {
+    @apply border-0;
+  }
+  /* end navbar */
+
+
+
   .esang-squre {
     @apply mx-auto md:mx-0 bg-[#334155] flex w-[125px] h-[125px] rounded-[10px] border-[3px] border-solid border-[#f3f4f6];
   }
@@ -206,7 +249,7 @@ button {
 
   .esang-section25 .esange-pdf {
     @apply bg-white border border-solid border-[rgba(51,65,85,0.08)]
-    shadow-[10px_6px_15px_rgba(187,187,187,0.25)] w-[20%] mt-4 rounded-[10px];
+    shadow-[10px_6px_15px_rgba(187,187,187,0.25)] md:w-[20%] mt-4 rounded-[10px];
   }
 
   .esange-section26 .content {
@@ -220,4 +263,17 @@ button {
     lg:px-[5.9rem] lg:py-[0.8rem] 
     xl:px-[6.9rem] xl:py-[0.8rem];
   }
+  .esange-section26 .swiper-pagination1  {
+   @apply text-center mt-8
+  }
+
+
+
+}
+
+@layer utilities{
+  .esange-navsidbar li:hover {
+    @apply text-[#2ABB9C] transition-all duration-500 ease-in;
+  }
+
 }
