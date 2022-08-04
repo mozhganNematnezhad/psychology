@@ -1282,16 +1282,12 @@ details[open] summary p {
   top: 34px;
 }
 
-.right-\[16rem\] {
-  right: 16rem;
+.left-\[2rem\] {
+  left: 2rem;
 }
 
 .top-\[420\] {
   top: 420;
-}
-
-.left-\[2rem\] {
-  left: 2rem;
 }
 
 .z-30 {
@@ -1300,6 +1296,22 @@ details[open] summary p {
 
 .z-40 {
   z-index: 40;
+}
+
+.col-span-10 {
+  grid-column: span 10 / span 10;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-11 {
+  grid-column: span 11 / span 11;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 
 .m-4 {
@@ -1428,6 +1440,10 @@ details[open] summary p {
   width: 100%;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .w-\[1\.2rem\] {
   width: 1.2rem;
 }
@@ -1438,26 +1454,6 @@ details[open] summary p {
 
 .w-\[250px\] {
   width: 250px;
-}
-
-.w-3\/12 {
-  width: 25%;
-}
-
-.w-8 {
-  width: 2rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[80\] {
-  width: 80;
-}
-
-.w-\[80\%\] {
-  width: 80%;
 }
 
 .min-w-full {
@@ -1500,6 +1496,14 @@ details[open] summary p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1510,6 +1514,10 @@ details[open] summary p {
 
 .items-center {
   align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
 }
 
 .justify-center {
@@ -1825,6 +1833,18 @@ details[open] summary p {
   font-family: 'iranYekanbakhlight';
 }
 
+.font-\[i\] {
+  font-family: i;
+}
+
+.font-\[ira\] {
+  font-family: ira;
+}
+
+.font-\[IranYekanbakhbold\] {
+  font-family: IranYekanbakhbold;
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -1879,6 +1899,15 @@ details[open] summary p {
 
 .text-\[42px\] {
   font-size: 42px;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-black {
@@ -2078,6 +2107,14 @@ button {
 }
 
 @media (min-width: 768px) {
+  .md\:col-span-11 {
+    grid-column: span 11 / span 11;
+  }
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
   .md\:m-auto {
     margin: auto;
   }

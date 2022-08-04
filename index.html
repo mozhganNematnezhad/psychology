@@ -11,7 +11,7 @@
   <!-- Css link -->
   <link rel="stylesheet" href="./style/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/main.css" /> 
+  <link rel="stylesheet" href="css/main.css" />
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
@@ -29,8 +29,7 @@
       <div class="grid grid-cols-3 w-full bg-white p-4">
 
         <button class=" flex justify-center items-center" @click="openMenu = !openMenu" :aria-expanded="openMenu"
-          aria-controls="mobile-navigation" aria-label="Navigation Menu"
-          >
+          aria-controls="mobile-navigation" aria-label="Navigation Menu">
           <img src="./Assests/img/header/Category.svg" alt="" class="md:pl-2 md:w-8">
           <p class="font-['IranYekanbakhRegular'] text-[12px]  text-[rgba(51,65,85,0.75)]">دسترسی سریع</p>
         </button>
@@ -41,7 +40,7 @@
         </button>
 
         <button class=" flex justify-center items-center" @click="openMenu3 = !openMenu3" :aria-expanded="openMenu3"
-        aria-controls="mobile-navigation3" aria-label="Navigation3 Menu3">
+          aria-controls="mobile-navigation3" aria-label="Navigation3 Menu3">
           <img src="./Assests/img/header/Filter.svg" alt="" class="md:pl-2 md:w-8">
           <p class="font-['IranYekanbakhRegular'] text-[12px] text-[rgba(51,65,85,0.75)]"> نسخه:</p>
           <p class="font-['IranYekanbakhbold'] text-[12px] text-[rgba(51,65,85,0.75)]"> پیشرفته</p>
@@ -86,42 +85,42 @@
       </nav>
     </div>
 
-  
-
-<!-- نسخه پیشرقته -->
-<div>
-
-  <div class="esange-backdrop absolute top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
-    :class="openMenu3 ? 'visible' : 'invisible' " x-cloak></div>
-  <nav id="mobile-navigation3" class="esange-navsidbar3" :class="openMenu3 ? 'visible' : 'invisible' " x-cloak>
-    <ul
-      class="absolute top-[420] right-0 bottom-0 left-0 w-full py-4 bg-white   transition-all duration-500 ease-in z-40	 "
-      :class="openMenu3 ? 'translat-y-0' : 'translate-y-full' ">
-      <p class="esange-titleside"> تنظیم نسخه پیشرفته</p>
-      <li class="">
-        <a href="#">نسخه ساده</a>
-        <button>
-          <img src="./Assests/img/header/Tick Square.svg" alt="">
-        </button>
-
-      </li>
-      <li>
-        <a href="#">نسخه پیشرفته</a>
-      </li>
-     
-
-      <!-- close -->
-      <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu3 = !openMenu3"
-        :aria-expanded="openMenu3" aria-controls=" mobile-navigation3" aria-label="Close navigation3 Menu3">
-        <img src="./Assests/img/header/close.svg" alt="">
-      </button>
-    </ul>
 
 
+    <!-- نسخه پیشرقته -->
+    <div>
+
+      <div class="esange-backdrop absolute top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
+        :class="openMenu3 ? 'visible' : 'invisible' " x-cloak></div>
+      <nav id="mobile-navigation3" class="esange-navsidbar3" :class="openMenu3 ? 'visible' : 'invisible' " x-cloak>
+        <ul
+          class="absolute top-[420] right-0 bottom-0 left-0 w-full py-4 bg-white   transition-all duration-500 ease-in z-40	 "
+          :class="openMenu3 ? 'translat-y-0' : 'translate-y-full' ">
+          <p class="esange-titleside"> تنظیم نسخه پیشرفته</p>
+          <li class="">
+            <a href="#">نسخه ساده</a>
+            <button>
+              <img src="./Assests/img/header/Tick Square.svg" alt="">
+            </button>
+
+          </li>
+          <li>
+            <a href="#">نسخه پیشرفته</a>
+          </li>
 
 
-  </nav>
-</div>
+          <!-- close -->
+          <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu3 = !openMenu3"
+            :aria-expanded="openMenu3" aria-controls=" mobile-navigation3" aria-label="Close navigation3 Menu3">
+            <img src="./Assests/img/header/close.svg" alt="">
+          </button>
+        </ul>
+
+
+
+
+      </nav>
+    </div>
 
 
 
@@ -628,36 +627,40 @@
       <!-- progress1 -->
       <div class="mt-20 md:max-w-[900px]  mx-4 xl:mx-auto">
         <h4 class="font-['IranYekanbakhfat'] text-[24px]  text-Main-text ">سری ها</h4>
-        <p class="font-['IranYekanBakhlight'] text-lg text-Main-text pt-4 leading-[40px]">
+        <p class="font-['IranYekanBakhlight'] text-lg text-Main-text pt-4 text-justify leading-[40px]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است و اگر متن طولانی
           هم بشه اینجا نشون میده و توضیحات تکمیلی هم اینجاست
         </p>
-        <div>
-          <div>
-            <div class="text-center mt-4">
-              <div class="meter orange nostripes">
-                <span style="width: 33.3%"></span>
-              </div>
-            </div>
+
+        <div class=" mt-4 grid grid-cols-12 items-baseline">
+          <div class="meter orange nostripes col-span-10 md:col-span-11">
+            <span style="width: 33.3%"></span>
           </div>
-          <div>      
-             88%
+          <div class=" col-span-2 md:col-span-1 flex flex-row-reverse justify-center items-center">
+            <span class=" text-2xl md:text-[36px] text-Main-text font-['IranYekanbakhbold']">88</span>
+            <span>% </span>
           </div>
         </div>
+
       </div>
       <!-- progress2 -->
       <div class="mt-20 md:max-w-[900px]  mx-4 xl:mx-auto">
         <h4 class="font-['IranYekanbakhfat'] text-[24px]  text-Main-text">سری ها</h4>
-        <p class="font-['IranYekanBakhlight'] text-lg text-Main-text pt-4 leading-[40px]">
+        <p class="font-['IranYekanBakhlight'] text-lg text-Main-text pt-4 text-justify leading-[40px]">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است و اگر متن طولانی
           هم بشه اینجا نشون میده و توضیحات تکمیلی هم اینجاست
         </p>
-        <div class="text-center mt-4">
-          <div class="meter orange nostripes">
+       
+        <div class=" mt-4 grid grid-cols-12 items-baseline">
+          <div class="meter orange nostripes col-span-10 md:col-span-11">
             <span style="width: 33.3%"></span>
           </div>
+          <div class=" col-span-2 md:col-span-1 flex flex-row-reverse justify-center items-center">
+            <span class=" text-2xl md:text-[36px] text-Main-text font-['IranYekanbakhbold']">88</span>
+            <span>% </span>
+          </div>
         </div>
-        <span>88%</span>
+     
       </div>
 
     </div>
@@ -1463,7 +1466,7 @@
           el: ".swiper-pagination1",
           clickable: true,
         },
-        
+
       });
 
     </script>
