@@ -57,7 +57,7 @@
         :class="openMenu ? 'visible' : 'invisible' " x-cloak></div>
       <nav id="mobile-navigation" class="esange-navsidbar" :class="openMenu ? 'visible' : 'invisible' " x-cloak>
         <ul
-          class="absolute top-0 right-0 bottom-0 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
+          class="absolute top-0 right-0 bottom-0 w-[80%] md:w-4/12 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
           :class="openMenu ? 'translat-x-0' : 'translate-x-full' ">
           <p class="esange-titleside">دسترسی سریع</p>
           <li class="">
@@ -74,7 +74,7 @@
           </li>
 
           <!-- close -->
-          <button class="absolute top-[34px] right-[16rem] w-[1.2rem]  " @click="openMenu = !openMenu"
+          <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu = !openMenu"
             :aria-expanded="openMenu" aria-controls=" mobile-navigation" aria-label="Close Navigation Menu">
             <img src="./Assests/img/header/close.svg" alt="">
           </button>

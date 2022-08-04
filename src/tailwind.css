@@ -92,7 +92,7 @@ button {
 
 
   .esange-navsidbar li {
-    @apply border-b border-solid border-[rgba(215,215,215,0.35)] w-72	 mx-4 py-4;
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] 	 mx-4 py-4;
   }
   .esange-navsidbar3 li {
     @apply border-b border-solid border-[rgba(215,215,215,0.35)] mx-8 py-4 flex items-center justify-between;
