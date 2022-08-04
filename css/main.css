@@ -634,7 +634,6 @@ video {
 .esange-navsidbar li {
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 18rem;
   border-bottom-width: 1px;
   border-style: solid;
   border-color: rgba(215,215,215,0.35);
@@ -1441,6 +1440,26 @@ details[open] summary p {
   width: 250px;
 }
 
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-\[80\] {
+  width: 80;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -2077,6 +2096,10 @@ button {
 
   .md\:w-8 {
     width: 2rem;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333%;
   }
 
   .md\:max-w-\[1080px\] {
