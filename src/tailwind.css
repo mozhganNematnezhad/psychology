@@ -100,10 +100,10 @@ button {
   .esange-navsidbar3 li:last-of-type {
     @apply border-0;
   }
-
   /* end navbar */
 
 
+  
   .esang-squre {
     @apply mx-auto md:mx-0 bg-[#334155] flex w-[125px] h-[125px] rounded-[10px] border-[3px] border-solid border-[#f3f4f6];
   }
