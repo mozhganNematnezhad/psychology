@@ -68,20 +68,37 @@ button {
         rgba(51, 65, 85, 0.4)
       ),
       rgba(51, 65, 85, 0.4) !important;
-    width: 30%;
+    /* width: 30%; */
   }
 
   .esange-navsidbar {
     background: linear-gradient(0deg, #ffffff, #ffffff), rgba(51, 65, 85, 0.4);
-    width: 30%;
+    /* width: 30%; */
+  }
+
+  .esang-header button{
+    border-left: 1px solid #d7d7d7
+  }
+
+  .esang-header button:last-of-type {
+    border-left: none;
   }
   .esange-navsidbar .esange-titleside {
    @apply border-b border-solid border-[#d7d7d7] p-4
   }
+  .esange-navsidbar3 .esange-titleside {
+   @apply border-b border-solid border-[#d7d7d7] p-4 
+  }
 
 
   .esange-navsidbar li {
-    @apply border-b border-solid border-[rgba(215,215,215,0.35)] w-72	 mx-auto py-4;
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] w-72	 mx-4 py-4;
+  }
+  .esange-navsidbar3 li {
+    @apply border-b border-solid border-[rgba(215,215,215,0.35)] mx-8 py-4 flex items-center justify-between;
+  }
+  .esange-navsidbar3 li:last-of-type {
+    @apply border-0;
   }
 
   /* end navbar */
