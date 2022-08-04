@@ -263,6 +263,12 @@ button {
     lg:px-[5.9rem] lg:py-[0.8rem] 
     xl:px-[6.9rem] xl:py-[0.8rem];
   }
+  .esange-section26 .swiper-pagination1  {
+   @apply text-center mt-8
+  }
+
+
+
 }
 
 @layer utilities{

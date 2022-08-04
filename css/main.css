@@ -1242,6 +1242,11 @@ details[open] summary p {
   }
 }
 
+.esange-section26 .swiper-pagination1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
 .visible {
   visibility: visible;
 }
