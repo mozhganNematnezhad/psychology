@@ -15,7 +15,7 @@
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
-<body x-data="{ openMenu : false , openMenu3 : false} ">
+<body x-data="{ openMenu : false , openMenu3 : false, openMenu4 : false} ">
 
   <style>
     [x-cloak] {
@@ -26,7 +26,7 @@
 
     <!-- header -->
     <div class="esang-header container mx-auto ">
-      <div class="grid grid-cols-3 w-full bg-white p-4">
+      <div class="grid grid-cols-3  w-full bg-white p-4 lg:hidden ">
 
         <button class=" flex justify-center items-center" @click="openMenu = !openMenu" :aria-expanded="openMenu"
           aria-controls="mobile-navigation" aria-label="Navigation Menu">
@@ -47,9 +47,22 @@
         </button>
       </div>
 
+      <div class="bg-white p-4 fixed right-0 top-[20rem] rotate-[270deg] shadow-2xl ">
+        <button class=" flex justify-center items-center"
+         @click="openMenu4 = !openMenu4" 
+         :aria-expanded="openMenu4"
+          aria-controls="mobile-navigation4" aria-label="Navigation4 Menu4">
+          <img src="./Assests/img/header/Category.svg" alt="" class="md:pl-2 md:w-8">
+          <p class="font-['IranYekanbakhRegular'] text-[12px]  text-[rgba(51,65,85,0.75)]">اطلاعات بیشتر</p>
+        </button>
+
+      </div>
     </div>
 
-    <!-- mene toggle sidbar دسترسی سریغ-->
+    <!-- descktop -->
+
+
+    <!--  دسترسی سریغ-->
     <div>
 
       <div class="esange-backdrop absolute top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
@@ -57,7 +70,7 @@
       <nav id="mobile-navigation" class="esange-navsidbar" :class="openMenu ? 'visible' : 'invisible' " x-cloak>
         <ul
           class="absolute top-0 right-0 bottom-0 w-[80%] md:w-4/12 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
-          :class="openMenu ? 'translat-x-0' : 'translate-x-full' ">
+          :class="openMenu ? 'translate-x-0' : 'translate-x-full' ">
           <p class="esange-titleside">دسترسی سریع</p>
           <li class="">
             <a href="#">نسخه ساده</a>
@@ -121,6 +134,43 @@
 
       </nav>
     </div>
+
+<!-- desktop  اطلاعات بیشتر-->
+<div>
+
+  <div class="esange-backdrop fixed top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
+    :class="openMenu4 ? 'visible' : 'invisible' " x-cloak></div>
+  <nav id="mobile-navigation4" class="esange-navsidbar" :class="openMenu4? 'visible' : 'invisible' " x-cloak>
+    <ul
+      class="fixed top-0 right-0 bottom-0 w-[80%] md:w-4/12 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
+      :class="openMenu4 ? 'translate-x-0' : 'translate-x-full' ">
+      <p class="esange-titleside">دسترسی سریع</p>
+      <li class="">
+        <a href="#">نسخه ساده</a>
+      </li>
+      <li>
+        <a href="#">نسخه پیشرفته</a>
+      </li>
+      <li>
+        <a href="#"> ردیف سوم موضوع</a>
+      </li>
+      <li>
+        <a href="#"> ردیف چهارم موضوع</a>
+      </li>
+
+      <!-- close -->
+      <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu4 = !openMenu4"
+        :aria-expanded="openMenu4" aria-controls=" mobile-navigation4" aria-label="Close Navigation4 Menu4">
+        <img src="./Assests/img/header/close.svg" alt="">
+      </button>
+    </ul>
+
+
+
+
+  </nav>
+</div>
+
 
 
 
@@ -650,7 +700,7 @@
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است و اگر متن طولانی
           هم بشه اینجا نشون میده و توضیحات تکمیلی هم اینجاست
         </p>
-       
+
         <div class=" mt-4 grid grid-cols-12 items-baseline">
           <div class="meter orange nostripes col-span-10 md:col-span-11">
             <span style="width: 33.3%"></span>
@@ -660,7 +710,7 @@
             <span>% </span>
           </div>
         </div>
-     
+
       </div>
 
     </div>

@@ -80,6 +80,10 @@ button {
     border-left: 1px solid #d7d7d7
   }
 
+  .esang-header button{
+    @apply lg:border-0 lg:p-4
+  }
+
   .esang-header button:last-of-type {
     border-left: none;
   }

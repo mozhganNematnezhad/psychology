@@ -611,6 +611,13 @@ video {
   border-left: 1px solid #d7d7d7
 }
 
+@media (min-width: 1024px) {
+  .esang-header button {
+    border-width: 0px;
+    padding: 1rem;
+  }
+}
+
 .esang-header button:last-of-type {
   border-left: none;
 }
@@ -1254,6 +1261,10 @@ details[open] summary p {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1290,12 +1301,32 @@ details[open] summary p {
   top: 420;
 }
 
-.z-30 {
-  z-index: 30;
+.top-\[2\] {
+  top: 2;
+}
+
+.top-\[20rem\] {
+  top: 20rem;
+}
+
+.top-\[200px\] {
+  top: 200px;
+}
+
+.top-\[200\] {
+  top: 200;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-40 {
   z-index: 40;
+}
+
+.z-30 {
+  z-index: 30;
 }
 
 .col-span-10 {
@@ -1304,14 +1335,6 @@ details[open] summary p {
 
 .col-span-2 {
   grid-column: span 2 / span 2;
-}
-
-.col-span-11 {
-  grid-column: span 11 / span 11;
-}
-
-.col-span-1 {
-  grid-column: span 1 / span 1;
 }
 
 .m-4 {
@@ -1479,6 +1502,21 @@ details[open] summary p {
 
 .translate-y-full {
   --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[17deg\] {
+  --tw-rotate: 17deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-\[270deg\] {
+  --tw-rotate: 270deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1833,18 +1871,6 @@ details[open] summary p {
   font-family: 'iranYekanbakhlight';
 }
 
-.font-\[i\] {
-  font-family: i;
-}
-
-.font-\[ira\] {
-  font-family: ira;
-}
-
-.font-\[IranYekanbakhbold\] {
-  font-family: IranYekanbakhbold;
-}
-
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -1897,17 +1923,13 @@ details[open] summary p {
   font-size: 24px;
 }
 
-.text-\[42px\] {
-  font-size: 42px;
-}
-
-.text-\[36px\] {
-  font-size: 36px;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
 }
 
 .font-black {
@@ -1991,6 +2013,18 @@ details[open] summary p {
 .shadow-\[0px_6px_15px_rgba\(240\2c 0\2c 115\2c 0\.15\)\] {
   --tw-shadow: 0px 6px 15px rgba(240,0,115,0.15);
   --tw-shadow-colored: 0px 6px 15px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2242,6 +2276,10 @@ button {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:w-3\/12 {
