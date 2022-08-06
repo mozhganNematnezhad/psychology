@@ -611,10 +611,15 @@ video {
   border-left: 1px solid #d7d7d7
 }
 
+@media (min-width: 768px) {
+  .esang-header button {
+    padding: 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .esang-header button {
     border-width: 0px;
-    padding: 1rem;
   }
 }
 
@@ -667,6 +672,8 @@ video {
 
 /* end navbar */
 
+/* section1 */
+
 .esang-squre {
   margin-left: auto;
   margin-right: auto;
@@ -691,9 +698,16 @@ video {
 
 .esang-section1 .esang-left {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .esang-section1 .esang-left {
+    flex-direction: row-reverse;
+  }
 }
 
 .esang-section1 .esang-left span {
@@ -741,11 +755,22 @@ video {
   padding-right: 0.4rem;
 }
 
-.esang-icon span {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
+.esang-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .esang-icon {
+    flex-direction: row;
+  }
+}
+
+.esang-section1 .esang-icon span {
+  height: 2rem;
+  width: 8rem;
+  padding: 0.5rem;
   font-family: 'IranYekanbakhMedium';
   font-size: 1rem;
   line-height: 1.5rem;
@@ -984,9 +1009,10 @@ video {
 
 .esang-section18 li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  text-align: justify;
   font-family: 'iranYekanbakhlight';
   font-size: 1rem;
   line-height: 1.5rem;
@@ -999,6 +1025,12 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
     line-height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .esang-section18 li {
+    align-items: center;
   }
 }
 
@@ -1273,6 +1305,14 @@ details[open] summary p {
   position: relative;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.top-\[20rem\] {
+  top: 20rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1283,10 +1323,6 @@ details[open] summary p {
 
 .left-0 {
   left: 0px;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .top-\[34px\] {
@@ -1301,32 +1337,12 @@ details[open] summary p {
   top: 420;
 }
 
-.top-\[2\] {
-  top: 2;
-}
-
-.top-\[20rem\] {
-  top: 20rem;
-}
-
-.top-\[200px\] {
-  top: 200px;
-}
-
-.top-\[200\] {
-  top: 200;
-}
-
-.z-50 {
-  z-index: 50;
+.z-30 {
+  z-index: 30;
 }
 
 .z-40 {
   z-index: 40;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .col-span-10 {
@@ -1451,6 +1467,10 @@ details[open] summary p {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[130px\] {
   height: 130px;
 }
@@ -1495,6 +1515,11 @@ details[open] summary p {
   border-collapse: separate;
 }
 
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-full {
   --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1502,16 +1527,6 @@ details[open] summary p {
 
 .translate-y-full {
   --tw-translate-y: 100%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-0 {
-  --tw-translate-x: 0px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[17deg\] {
-  --tw-rotate: 17deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1578,6 +1593,10 @@ details[open] summary p {
   gap: 1.5rem;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -1633,6 +1652,11 @@ details[open] summary p {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2abb9c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 187 156 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F00073\] {
@@ -1705,11 +1729,6 @@ details[open] summary p {
 .bg-\[\#ffa200\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 162 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2abb9c\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 187 156 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#5c4e8e\] {
@@ -1823,6 +1842,10 @@ details[open] summary p {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1839,16 +1862,16 @@ details[open] summary p {
   font-family: 'IranYekanbakhbold';
 }
 
+.font-\[\'IranYekanbakhMedium\'\] {
+  font-family: 'IranYekanbakhMedium';
+}
+
 .font-\[\'IranYekanbakhheavy\'\] {
   font-family: 'IranYekanbakhheavy';
 }
 
 .font-\[\'IranYekanbakhfat\'\] {
   font-family: 'IranYekanbakhfat';
-}
-
-.font-\[\'IranYekanbakhMedium\'\] {
-  font-family: 'IranYekanbakhMedium';
 }
 
 .font-\[\'IranYekanBakhlight\'\] {
@@ -1875,6 +1898,11 @@ details[open] summary p {
   font-size: 12px;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1890,11 +1918,6 @@ details[open] summary p {
 
 .text-\[30px\] {
   font-size: 30px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-\[20px\] {
@@ -1964,6 +1987,11 @@ details[open] summary p {
   color: rgba(51,65,85,0.75);
 }
 
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .text-Main-text {
   --tw-text-opacity: 1;
   color: rgb(51 65 85 / var(--tw-text-opacity));
@@ -1988,14 +2016,13 @@ details[open] summary p {
   color: rgb(51 65 85 / var(--tw-text-opacity));
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-\[\#FFA200\] {
   --tw-text-opacity: 1;
   color: rgb(255 162 0 / var(--tw-text-opacity));
+}
+
+.text-\[rgba\(51\2c 65\2c 85\2c 0\.5\)\] {
+  color: rgba(51,65,85,0.5);
 }
 
 .shadow-\[0px_6px_25px_rgba\(187\2c 187\2c 187\2c 0\.25\)\] {
@@ -2013,18 +2040,6 @@ details[open] summary p {
 .shadow-\[0px_6px_15px_rgba\(240\2c 0\2c 115\2c 0\.15\)\] {
   --tw-shadow: 0px 6px 15px rgba(240,0,115,0.15);
   --tw-shadow-colored: 0px 6px 15px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-lg {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2165,6 +2180,10 @@ button {
     display: flex;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:w-8 {
     width: 2rem;
   }
@@ -2288,6 +2307,10 @@ button {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:max-w-\[900px\] {
+    max-width: 900px;
   }
 
   .lg\:grid-cols-2 {

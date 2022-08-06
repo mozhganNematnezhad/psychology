@@ -67,3 +67,5 @@ am5.ready(function () {
   series.labels.template.set("visible", false);
   series.appear(1000, 100);
 }); 
+
+

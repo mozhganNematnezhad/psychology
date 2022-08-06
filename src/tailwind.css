@@ -81,7 +81,7 @@ button {
   }
 
   .esang-header button{
-    @apply lg:border-0 lg:p-4
+    @apply lg:border-0 md:p-4
   }
 
   .esang-header button:last-of-type {
@@ -106,13 +106,12 @@ button {
   }
   /* end navbar */
 
-
-
+/* section1 */
   .esang-squre {
     @apply mx-auto md:mx-0 bg-[#334155] flex w-[125px] h-[125px] rounded-[10px] border-[3px] border-solid border-[#f3f4f6];
   }
   .esang-section1 .esang-left {
-    @apply flex flex-wrap justify-between gap-4;
+    @apply flex flex-col justify-center items-center md:flex-row-reverse    gap-4 ;
   }
 
   .esang-section1 .esang-left span {
@@ -127,9 +126,12 @@ button {
   .esang-icon img {
     @apply w-[35px] h-[35px] rounded-tr-[5px] rounded-br-[5px] px-[0.4rem];
   }
+  .esang-icon  {
+    @apply flex items-center flex-col md:flex-row ;
+  }
 
-  .esang-icon span {
-    @apply py-[0.2rem] px-[1.1rem]  text-base font-['IranYekanbakhMedium'] text-Main-text;
+ .esang-section1 .esang-icon span {
+    @apply  w-[8rem]  h-[2rem] p-2  text-base font-['IranYekanbakhMedium'] text-Main-text;
   }
 
   .esang-backgreen,
@@ -183,7 +185,8 @@ button {
   }
 
   .esang-section18 li {
-    @apply flex items-center py-2 font-['iranYekanbakhlight'] text-base md:text-xl md:leading-[40px] text-Main-text;
+    @apply  items-start flex lg:items-center py-2 
+    font-['iranYekanbakhlight'] text-base text-justify   md:text-xl md:leading-[40px] text-Main-text;
   }
 
   .esang-section20 .esang-jobwork {

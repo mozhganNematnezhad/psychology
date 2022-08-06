@@ -47,13 +47,12 @@
         </button>
       </div>
 
-      <div class="bg-white p-4 fixed right-0 top-[20rem] rotate-[270deg] shadow-2xl ">
-        <button class=" flex justify-center items-center"
-         @click="openMenu4 = !openMenu4" 
-         :aria-expanded="openMenu4"
+      <!-- اطلاعات بیشتر -->
+      <div class="fixed right-0 top-[20rem] rotate-[270deg] bg-[#2abb9c]  rounded-lg hidden lg:flex ">
+        <button class=" flex justify-center items-center" @click="openMenu4 = !openMenu4" :aria-expanded="openMenu4"
           aria-controls="mobile-navigation4" aria-label="Navigation4 Menu4">
-          <img src="./Assests/img/header/Category.svg" alt="" class="md:pl-2 md:w-8">
-          <p class="font-['IranYekanbakhRegular'] text-[12px]  text-[rgba(51,65,85,0.75)]">اطلاعات بیشتر</p>
+          <!-- <img src="./Assests/img/header/Category.svg" alt="" class="md:pl-2 md:w-8"> -->
+          <p class="font-['IranYekanbakhMedium'] text-lg  text-white">اطلاعات بیشتر</p>
         </button>
 
       </div>
@@ -135,44 +134,40 @@
       </nav>
     </div>
 
-<!-- desktop  اطلاعات بیشتر-->
-<div>
+    <!-- desktop  اطلاعات بیشتر-->
+    <div>
+      <div class="esange-backdrop fixed top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
+        :class="openMenu4 ? 'visible' : 'invisible' " x-cloak></div>
+      <nav id="mobile-navigation4" class="esange-navsidbar" :class="openMenu4? 'visible' : 'invisible' " x-cloak>
+        <ul
+          class="fixed top-0 right-0 bottom-0 w-[80%] md:w-4/12 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
+          :class="openMenu4 ? 'translate-x-0' : 'translate-x-full' ">
+          <p class="esange-titleside">دسترسی سریع</p>
+          <li class="">
+            <a href="#">نسخه ساده</a>
+          </li>
+          <li>
+            <a href="#">نسخه پیشرفته</a>
+          </li>
+          <li>
+            <a href="#"> ردیف سوم موضوع</a>
+          </li>
+          <li>
+            <a href="#"> ردیف چهارم موضوع</a>
+          </li>
 
-  <div class="esange-backdrop fixed top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
-    :class="openMenu4 ? 'visible' : 'invisible' " x-cloak></div>
-  <nav id="mobile-navigation4" class="esange-navsidbar" :class="openMenu4? 'visible' : 'invisible' " x-cloak>
-    <ul
-      class="fixed top-0 right-0 bottom-0 w-[80%] md:w-4/12 lg:w-3/12 py-4 bg-white   transition-all duration-500 ease-in z-40	 "
-      :class="openMenu4 ? 'translate-x-0' : 'translate-x-full' ">
-      <p class="esange-titleside">دسترسی سریع</p>
-      <li class="">
-        <a href="#">نسخه ساده</a>
-      </li>
-      <li>
-        <a href="#">نسخه پیشرفته</a>
-      </li>
-      <li>
-        <a href="#"> ردیف سوم موضوع</a>
-      </li>
-      <li>
-        <a href="#"> ردیف چهارم موضوع</a>
-      </li>
-
-      <!-- close -->
-      <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu4 = !openMenu4"
-        :aria-expanded="openMenu4" aria-controls=" mobile-navigation4" aria-label="Close Navigation4 Menu4">
-        <img src="./Assests/img/header/close.svg" alt="">
-      </button>
-    </ul>
-
+          <!-- close -->
+          <button class="absolute top-[34px]  left-[2rem] w-[1.2rem]  " @click="openMenu4 = !openMenu4"
+            :aria-expanded="openMenu4" aria-controls=" mobile-navigation4" aria-label="Close Navigation4 Menu4">
+            <img src="./Assests/img/header/close.svg" alt="">
+          </button>
+        </ul>
 
 
 
-  </nav>
-</div>
 
-
-
+      </nav>
+    </div>
 
 
     <!--section 1 -->
@@ -185,7 +180,8 @@
 
         <div class="esang-testHosh md:flex md:justify-between md:mr-4 lg:mr-0">
           <div class="py-4 md:py-0">
-            <h3 class="font-['IranYekanbakhheavy'] text-base lg:text-lg text-Main-text">تست هوش IQ کتل (فرم-A) رایگان
+            <h3 class="font-['IranYekanbakhheavy'] text-base text-center md:text-right lg:text-lg text-Main-text">تست
+              هوش IQ کتل (فرم-A) رایگان
             </h3>
           </div>
 
@@ -224,7 +220,7 @@
 
 
     <!-- section2 -->
-    <div class="esang-section2 bg-white  xl:max-w-[1080px] rounded-[10px] p-4 mt-8 mx-4 xl:mx-auto  
+    <div class="esang-section2 bg-white lg:max-w-[900px] xl:max-w-[1080px] rounded-[10px] p-4 mt-8 mx-4 xl:mx-auto  
     shadow-[0px_6px_25px_rgba(187,187,187,0.25)] border border-solid border-[rgba(51, 65, 85, 0.08)]">
       <!-- chaer area -->
       <div>
@@ -249,7 +245,7 @@
             md:gap-0 md:flex-nowrap  md:justify-around md:items-end ">
 
       <div>
-        <p class="text-Main-text font-['IranYekanbakhfat'] text-base text-center md:text-right md:text-lg">15<span
+        <p class="text-Main-text font-['IranYekanbakhfat'] text-base text-center text-center md:text-lg">15<span
             class="text-base font-['IranYekanbakhMedium']">دقیقه </span>
         </p>
         <p class="text-[rgba(51,56,85,0.6)] text-base md:text-lg font-['IranYekanbakhMedium'] pt-[0.5rem]">مدت زمان
@@ -1222,7 +1218,8 @@
       این نمره شما در طبقه ی افراد تیزهوش قرار دارید. شما از لحاظ هوشی بالاتر از متوسط افراد جامعه قرار دارید.
     </p>
 
-    <div class="flex">
+    <!-- slider in tablet and descktop -->
+    <div class="hidden md:flex">
       <div class="">
         <img src="./Assests/img/ta.svg" alt="">
       </div>
@@ -1232,8 +1229,51 @@
       <div class=" ">
         <img src="./Assests/img/ta.svg" alt="">
       </div>
+    </div>
+
+    <!-- slider in mobile -->
+    <div class="flex md:hidden">
+      <div class="swiper mySwiper2 mt-12">
+        <div class="swiper-wrapper mb-[5rem]">
+          <div class="swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="./Assests/img/ta.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="./Assests/img/ta.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="./Assests/img/ta.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-content">
+              <div class="image">
+                <img src="./Assests/img/ta.svg" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
 
     </div>
+
+
+
+
+
   </div>
 
   <!-- section24 -->
@@ -1335,8 +1375,8 @@
     <div class="esange-pdf">
       <a download href="./Assests/pdf//تست-شخصیت-شناسی-هالند.pdf" class="flex flex-col justify-around items-center p-5">
         <img src="./Assests/img/pdf.svg" class="mx-auto my-3" alt="">
-        <p>دانلود تفسیر</p>
-        <p>دانلود 3 مگ</p>
+        <p class="font-['IranYekanbakhheavy']  text-base text-Main-text">دانلود تفسیر</p>
+        <p class="text-[rgba(51,65,85,0.5)] text-sm font-['IranYekanbakhRegular']">دانلود 3 مگ</p>
       </a>
     </div>
   </div>
@@ -1344,15 +1384,15 @@
   <!-- section26 -->
   <div class="esange-section26 md:max-w-[1080px] mt-20 mx-4 xl:mx-auto mb-12">
     <div class="swiper mySwiper1">
-      <div class="swiper-wrapper">
+      <div class="swiper-wrapper ">
         <!-- 1 -->
         <div class="swiper-slide">
           <div class="content bg-[#5c4e8e]">
             <div class="m-4 flex items-center justify-center">
               <img src="./Assests/img/s1.svg" alt="">
             </div>
-            <div class="text-white text-center m-4">
-              <h3 class="font-['IranYekanbakhbold'] text-base">تست هوش چند گانه گاردنر-مک کنزی(MII)</h3>
+            <div class="text-white  m-4">
+              <h3 class="font-['IranYekanbakhbold'] text-base text-right">تست هوش چند گانه گاردنر-مک کنزی(MII)</h3>
               <p class="font-['IranYekanbakhMedium'] text-sm leading-[26px] pt-4">
                 همانطور که ملاحظه می کنید، طبق این نمره شما در طبقه ی افراد تیزهوش قرار دارید. شما از لحاظ هوشی بالاتر
                 از متوسط افراد جامعه قرار دارید. این آمار بسیار خوبی است، زیرا این سطح از بهره هوشی می تواند در موفقیت
@@ -1448,11 +1488,11 @@
   </style>
   <div>
     <script src="./style/js/swiper-bundle.min.js "></script>
-    <script src="./src//js//amcharts5/index.js"></script>
-    <script src="./src//js//amcharts5/xy.js"></script>
-    <script src="./src//js//amcharts5/percent.js"></script>
-    <script src="./src//js//amcharts5/themes/Animated.js"></script>
-    <script src="./src//js//chart/index.js"></script>
+    <script src="./src/js/amcharts5/index.js"></script>
+    <script src="./src/js/amcharts5/xy.js"></script>
+    <script src="./src/js/amcharts5/percent.js"></script>
+    <script src="./src/js/amcharts5/themes/Animated.js"></script>
+    <script src="./src/js/chart/index.js"></script>
 
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -1486,7 +1526,6 @@
     </script>
 
     <script>
-
       var swiper = new Swiper(".mySwiper1", {
         loop: true,
         autoplay: {
@@ -1518,7 +1557,37 @@
         },
 
       });
+    </script>
 
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          // disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+            // spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 4,
+          },
+        },
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+      });
     </script>
 
 </body>
