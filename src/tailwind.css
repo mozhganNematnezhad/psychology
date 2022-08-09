@@ -58,6 +58,8 @@ button {
   outline: none;
 }
 
+
+
 /* components */
 
 @layer components {
@@ -119,19 +121,20 @@ button {
     rounded-[5px] py-[0.2rem] px-[1.1rem];
   }
 
+ 
   .esang-icon button {
     @apply bg-[#F3F4F6]  flex justify-center items-center rounded-[5px] font-['IranYekanbakhMedium'];
   }
 
   .esang-icon img {
-    @apply w-[35px] h-[35px] rounded-tr-[5px] rounded-br-[5px] px-[0.4rem];
+    @apply h-[38px] w-[35px] lg:h-[35px] rounded-tr-[5px] rounded-br-[5px] px-[0.4rem];
   }
   .esang-icon  {
     @apply flex items-center flex-col md:flex-row ;
   }
 
  .esang-section1 .esang-icon span {
-    @apply  w-[8rem]  h-[2rem] p-2  text-base font-['IranYekanbakhMedium'] text-Main-text;
+    @apply   w-[8rem]  h-[2rem] md:w-full md:h-full  lg:w-[8rem]  lg:h-[2rem] p-2  text-base font-['IranYekanbakhMedium'] text-Main-text;
   }
 
   .esang-backgreen,
@@ -184,10 +187,16 @@ button {
      flex justify-center items-center flex-row-reverse;
   }
 
-  .esang-section18 li {
-    @apply  items-start flex lg:items-center py-2 
-    font-['iranYekanbakhlight'] text-base text-justify   md:text-xl md:leading-[40px] text-Main-text;
+  .esang-section18 .esange-checklist18 li {
+    @apply font-['IranYekanBakhlight'] text-base text-justify items-start flex 
+     lg:items-center py-2 md:text-xl md:leading-[40px] text-Main-text	;
   }
+
+ 
+  .mySwiper  .swiper-pagination-bullet.swiper-pagination-bullet-active{
+     @apply rounded-[0.5rem] w-[3rem] bg-[rgba(42,187,156,0.25)] !important;
+  }
+
 
   .esang-section20 .esang-jobwork {
     @apply bg-white border border-solid border-[#d7d7d7] rounded-[10px] flex-col flex md:flex-row items-center px-4;

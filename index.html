@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./style/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="./src/css/style.css" />
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
@@ -188,24 +189,36 @@
 
         <div class="esang-border m-4 border-b border-dashed border-[rgba(215, 215, 215, 0.6])"></div>
         <div
-          class="esang-icon flex flex-wrap justify-between md:justify-center lg:flex-nowrap lg:justify-start gap-4  ">
+          class="esang-icon flex flex-wrap justify-between md:justify-center lg:flex-col lg:justify-between xl:flex-row xl:justify-bettween gap-4  ">
+          <div class="md:flex flex-col md:flex-row gap-4">
+            <button class="esang-pdf mt-4">
+              <img src="./Assests/img/section1/pdf.svg" alt="" class="bg-[#F00073]">
+              <span>دانلود نسخه pdf</span>
+            </button>
+            <button class="esang-sherit mt-4">
+              <img src="./Assests/img/section1/sherit.svg" alt="" class="bg-[#389DE7]">
+              <span> اشتراک گزاری نتیجه </span>
+            </button>
+            <button class="esang-comment mt-4">
+              <img src="./Assests/img/section1/comment.svg" alt="" class="bg-[#FFB647]">
+              <span> ثبت نظر </span>
+            </button>
+            <button class="esang-again mt-4">
+              <img src="./Assests/img/section1/again.svg" alt="" class="bg-[#2ABB9C]">
+              <span> انجام مجدد تست </span>
+            </button>
+          </div>
 
-          <button class="esang-pdf">
-            <img src="./Assests/img/section1/pdf.svg" alt="" class="bg-[#F00073]">
-            <span>دانلود نسخه pdf</span>
-          </button>
-          <button class="esang-sherit">
-            <img src="./Assests/img/section1/sherit.svg" alt="" class="bg-[#389DE7]">
-            <span> اشتراک گزاری نتیجه </span>
-          </button>
-          <button class="esang-comment">
-            <img src="./Assests/img/section1/comment.svg" alt="" class="bg-[#FFB647]">
-            <span> ثبت نظر </span>
-          </button>
-          <button class="esang-again">
-            <img src="./Assests/img/section1/again.svg" alt="" class="bg-[#2ABB9C]">
-            <span> انجام مجدد تست </span>
-          </button>
+          <div class="lg:mt-4 xl:mt-0">
+            <button class="px-[2rem] py-[0.5rem] bg-[#f3f4f6] border border-solid border-[rgba(51,65,85,0.2)] ">
+              <ul  class="flex items-center  gap-6">
+                <li class="bg-Main-text font-['IranYekanbakhMedium'] text-sm rounded-[5px] text-white px-[1rem] py-[0.3rem]">نسخه ساده</li>
+                <li class="font-['IranYekanbakhMedium'] text-sm  text-Main-text"> نسخه پیشرفته</li>
+              </ul>
+            </button>
+
+
+          </div>
 
         </div>
 
@@ -702,7 +715,7 @@
         </div>
       </div>
     </div>
-   
+
 
     <!-- section13 -->
     <div class="esang-section13 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
@@ -842,7 +855,7 @@
 
 
       <div class="mt-12">
-        <ul>
+        <ul class="esange-checklist18">
           <li>
             <img src="./Assests/img/Tick Square.svg" class="pl-3" alt="">
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
@@ -1260,7 +1273,7 @@
       <!-- accordian -->
       <div class="esange-accordian">
         <div class='flex items-center justify-center'>
-          <div class='w-full py-8 mx-4 xl:mx-auto'>
+          <div class='w-full py-8  xl:mx-auto'>
             <!-- 1 -->
             <details class="w-full  border border-[#d7d7d7] cursor-pointer   mb-3">
               <summary
@@ -1437,7 +1450,7 @@
           </div>
 
         </div>
-        <div class="swiper-pagination1"></div>
+        <!-- <div class="swiper-pagination1"></div> -->
       </div>
 
     </div>
@@ -1455,9 +1468,8 @@
       }
     </style>
 
-  </di
-  v>
-  
+  </di v>
+
   <script src="./style/js/swiper-bundle.min.js "></script>
   <script src="./src/js/amcharts5/index.js"></script>
   <script src="./src/js/amcharts5/xy.js"></script>
@@ -1467,7 +1479,7 @@
 
   <script>
     var swiper = new Swiper(".mySwiper", {
-      loop: true,
+     loop: true,
       autoplay: {
         delay: 5000,
         // disableOnInteraction: false,
@@ -1522,10 +1534,7 @@
           spaceBetween: 20,
         },
       },
-      pagination: {
-        el: ".swiper-pagination1",
-        clickable: true,
-      },
+
 
     });
   </script>
