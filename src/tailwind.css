@@ -114,7 +114,7 @@ button {
   }
 
   .esang-section4 .esang-backwhite {
-    @apply bg-white  w-[270px]  md:w-[440px] md:h-[222px] absolute top-[4rem]  rounded-[10px];
+    @apply bg-white  w-[270px] md:w-[440px] lg:w-[380px] xl:w-[440px] md:h-[222px] absolute top-[4rem]  rounded-[10px];
   }
 
   .esange-linerback {
