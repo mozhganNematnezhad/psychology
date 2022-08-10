@@ -1,25 +1,15 @@
-/* @font-face {
-  font-family: IranYekanbakhRegular;
-  src: url("../../Assests/font/YekanBakhFaNum04Regular.ttf");
-} */
 
-/* @font-face {
-  font-family: IranYekanbakhFat;
-  src: url("../../Assests/font/YekanBakhFaNum08Fat.ttf");
-} */
 @font-face {
   font-family: IranYekanbakhLight;
   font-style: normal;
   font-weight: 300;
-  src: url("../Assests/font/Yekan\ Bakh\ FaNum\ 03\ Light.ttf")
-    format("embedded-opentype");
+  src: url("../Assests/font/Yekan/YekanBakhFaNum03Light.ttf")
 }
 @font-face {
   font-family: IranYekanbakhRegular;
   font-style: normal;
   font-weight: 400;
   src: url("../Assests/font/YekanBakhFaNum04Regular.ttf")
-    format("embedded-opentype");
 }
 
 @font-face {
@@ -27,22 +17,19 @@
   font-style: normal;
   font-weight: 500;
   src: url("../Assests/font/YekanBakhFaNum05Medium.ttf")
-    format("embedded-opentype");
 }
 
 @font-face {
   font-family: IranYekanbakhbold;
   font-style: normal;
   font-weight: 700;
-  src: url("../Assests/font/Yekan\ Bakh\ FaNum\ 06\ Bold.ttf")
-    format("embedded-opentype");
+  src: url("../Assests/font/Yekan/YekanBakhFaNum06Bold.ttf")
 }
 @font-face {
   font-family: IranYekanbakhHeavy;
   font-style: normal;
   font-weight: 800;
-  src: url("../Assests/font/Yekan\ Bakh\ FaNum\ 07\ Heavy.ttf")
-    format("embedded-opentype");
+  src: url("../Assests/font/YekanBakhFaNum07Heavy.ttf")
 }
 
 @font-face {
@@ -50,5 +37,4 @@
    font-style: normal;
   font-weight: 900; 
   src: url("../Assests/font/YekanBakhFaNum08Fat.ttf")
-    format("embedded-opentype");
 }
