@@ -1959,6 +1959,18 @@ details[open] summary p {
   font-family: 'iranYekanbakhlight';
 }
 
+.font-\[\'\'\] {
+  font-family: '';
+}
+
+.font-\[\'Iran\'\] {
+  font-family: 'Iran';
+}
+
+.font-\[\'font-\\\[\\\'IranYekanbakhbold\\\'\\\]\'\] {
+  font-family: 'font-\[\'IranYekanbakhbold\'\]';
+}
+
 .text-\[12px\] {
   font-size: 12px;
 }
@@ -1978,8 +1990,8 @@ details[open] summary p {
   line-height: 1.25rem;
 }
 
-.text-\[82px\] {
-  font-size: 82px;
+.text-\[90px\] {
+  font-size: 90px;
 }
 
 .text-\[14px\] {
@@ -2138,45 +2150,107 @@ details[open] summary p {
 /* font */
 
 @font-face {
-  font-family: IranYekanBakhlight;
+  font-family: IranYekanbakhhairline;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 03\ LIGHT.TTF");
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 01\ Hairline.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 01\ Hairline.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 01\ Hairline.woff') format('woff2'),
+}
+
+@font-face {
+  font-family: IranYekanbakhThin;
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 02\ Thin.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 02\ Thin.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 02\ Thin.woff') format('woff2'),
+}
+
+@font-face {
+  font-family: IranYekanbakhLight;
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 03\ Light.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 03\ Light.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 03\ Light.woff') format('woff2'),
 }
 
 @font-face {
   font-family: IranYekanbakhRegular;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 04\ REGULAR.TTF");
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 04\ Regular.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 04\ Regular.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 04\ Regular.woff') format('woff2'),
 }
 
 @font-face {
   font-family: IranYekanbakhMedium;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 05\ MEDIUM.TTF");
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 05\ Medium.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 05\ Medium.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 06\ Bold.woff') format('woff2'),
 }
 
 @font-face {
   font-family: IranYekanbakhbold;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 06\ BOLD.TTF");
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 06\ Bold.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 06\ Bold.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 06\ Bold.woff') format('woff2'),
 }
 
 @font-face {
-  font-family: IranYekanbakhheavy;
+  font-family: IranYekanbakhHeavy;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 07\ HEAVY.TTF");
+  font-style: normal;
+
+  font-weight: 800;
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 07\ Heavy.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 07\ Heavy.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 07\ Heavy.woff') format('woff2'),
 }
 
 @font-face {
   font-family: IranYekanbakhfat;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 08\ FAT.TTF") format("woff");
-}
+  font-style: normal;
 
-@font-face {
-  font-family: IranYekanbakhhairline;
+  font-weight: 900;
 
-  src: url("../Assests/fonts/YEKAN\ BAKH\ EN\ 01\ HAIRLINE.TTF");
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 08\ Fat.eot');
+
+  src: url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 08\ Fat.ttf') format('embedded-opentype'),
+		 url('../Assests/fonts/Yekan\ Bakh\ FaNum\ 08\ Fat.woff') format('woff2'),
 }
 
 /* end font-face */
