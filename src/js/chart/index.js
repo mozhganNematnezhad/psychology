@@ -38,9 +38,14 @@ am5.ready(function () {
     .get("colors")
     .set("colors", [
       am5.color("#faa6ce"),
-      am5.color("#ffe6bf"),
-      am5.color("#b5e7dd"),
+      am5.color("#faa6ce"),
+      am5.color("#ffe5bf"),
+      am5.color("#ffe5bf"),
+      am5.color("#b4e7dc"),
+      am5.color("#b4e7dc"),
       am5.color("#2abb9c"),
+      am5.color("#f3f4f6"),
+      am5.color("#f3f4f6"),
       am5.color("#f3f4f6"),
     ]);
   series.states.create("hidden", {
@@ -49,8 +54,8 @@ am5.ready(function () {
   });
 
   series.slices.template.setAll({
-    cornerRadius: 35,
-    strokeWidth: 2,
+    cornerRadius: 15,
+    topWidth: am5.percent(100),
   });
   series.ticks.template.setAll({
     forceHidden: false,
@@ -58,11 +63,16 @@ am5.ready(function () {
 
   // Set data
   series.data.setAll([
-    { value: 10, category: "One" },
-    { value: 9, category: "Two" },
-    { value: 6, category: "Three" },
+    { value: 5, category: "One" },
+    { value: 5, category: "Two" },
+    { value: 5, category: "Three" },
     { value: 5, category: "Four" },
-    { value: 4, category: "Five" },
+    { value: 5, category: "Five" },
+    { value: 5, category: "six" },
+    { value: 5, category: "seven" },
+    { value: 5, category: "night" },
+    { value: 5, category: "nine" },
+    { value: 5, category: "ten" },
   ]);
   series.labels.template.set("visible", false);
   series.appear(1000, 100);
