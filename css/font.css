@@ -1,7 +1,7 @@
 @font-face {
-    font-family: YekanBKFat;
-    src: url('../Assests/fonts/YEKANBAKHEN08FAT.TTF');
+    font-family: IranYekanbakhRegular;
+    src: url('../../Assests/font/YekanBakhFaNum04Regular.ttf');
 }
-.bk-fat {
-    font-family: YekanBKFat;
+.bk-req {
+    font-family: IranYekanbakhRegular !important;
 }

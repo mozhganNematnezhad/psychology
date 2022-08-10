@@ -1,6 +1,9 @@
 /*
 ! tailwindcss v3.1.6 | MIT License | https://tailwindcss.com
 */
+@import url('./font.css');
+@import url('./custom.css');
+
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
