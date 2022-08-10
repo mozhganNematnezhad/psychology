@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="./style/css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="./src/css/style.css" />
   <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 
@@ -49,10 +48,9 @@
       </div>
 
       <!-- اطلاعات بیشتر -->
-      <div class="fixed right-0 top-[20rem] rotate-[270deg] bg-[#2abb9c]  rounded-lg hidden lg:flex ">
+      <div class=" hidden lg:fixed lg:right-[-31px] lg:top-[20rem] lg:rotate-[270deg] lg:bg-[#2abb9c] lg:z-40  lg:rounded-lg  lg:flex">
         <button class=" flex justify-center items-center" @click="openMenu4 = !openMenu4" :aria-expanded="openMenu4"
           aria-controls="mobile-navigation4" aria-label="Navigation4 Menu4">
-          <!-- <img src="./Assests/img/header/Category.svg" alt="" class="md:pl-2 md:w-8"> -->
           <p class="font-['IranYekanbakhMedium'] text-lg  text-white">اطلاعات بیشتر</p>
         </button>
 
@@ -132,7 +130,7 @@
 
     <!-- desktop  اطلاعات بیشتر-->
     <div>
-      <div class="esange-backdrop fixed top-0 bottom-0  left-0 z-30	 w-full  transition-all duration-500 ease-in"
+      <div class="esange-backdrop fixed top-0 bottom-0  left-0 z-40	 w-full  transition-all duration-500 ease-in"
         :class="openMenu4 ? 'visible' : 'invisible' " x-cloak></div>
       <nav id="mobile-navigation4" class="esange-navsidbar" :class="openMenu4? 'visible' : 'invisible' " x-cloak>
         <ul
@@ -171,7 +169,7 @@
 
       <div class="esang-squre"></div>
 
-      <div class="esang-box lg:w-full lg:p-8">
+      <div class="esang-box w-full lg:p-8">
 
         <div class="esang-testHosh md:flex md:justify-between md:mr-4 lg:mr-0">
           <div class="py-4 md:py-0">
@@ -189,7 +187,7 @@
 
         <div class="esang-border m-4 border-b border-dashed border-[rgba(215, 215, 215, 0.6])"></div>
         <div
-          class="esang-icon flex flex-wrap justify-between md:justify-center lg:flex-col lg:justify-between xl:flex-row xl:justify-bettween gap-4  ">
+          class="esang-icon flex flex-wrap justify-between md:justify-center lg:flex-row lg:justify-between xl:flex-row xl:justify-bettween gap-4  ">
           <div class="md:flex flex-col md:flex-row gap-4">
             <button class="esang-pdf mt-4">
               <img src="./Assests/img/section1/pdf.svg" alt="" class="bg-[#F00073]">
@@ -209,7 +207,7 @@
             </button>
           </div>
 
-          <div class="lg:mt-4 xl:mt-0">
+          <div class="lg:mt-4 xl:mt-0 hidden lg:flex">
             <button class="px-[2rem] py-[0.5rem] bg-[#f3f4f6] border border-solid border-[rgba(51,65,85,0.2)] ">
               <ul  class="flex items-center  gap-6">
                 <li class="bg-Main-text font-['IranYekanbakhMedium'] text-sm rounded-[5px] text-white px-[1rem] py-[0.3rem]">نسخه ساده</li>
@@ -227,7 +225,7 @@
 
 
     <!-- section2 -->
-    <div class="esang-section2 bg-white lg:max-w-[900px] xl:max-w-[1080px] rounded-[10px] p-4 mt-8 mx-4 xl:mx-auto  
+    <div class="esang-section2 bg-white lg:max-w-[900px] xl:max-w-[1080px] rounded-[10px] p-4 mt-8 mx-4 lg:mx-auto  
     shadow-[0px_6px_25px_rgba(187,187,187,0.25)] border border-solid border-[rgba(51, 65, 85, 0.08)]">
       <!-- chaer area -->
       <div>
@@ -246,7 +244,7 @@
     </div>
 
     <!-- section3 -->
-    <div class="esang-section3  bg-white  max-w-[1080px] rounded-[10px]  p-4  mt-8 mb-8  mx-4 xl:mx-auto 
+    <div class="esang-section3  bg-white  max-w-[1080px] rounded-[10px]  p-4  mt-8 mb-8  mx-4 lg:mx-auto 
                 shadow-[0px_6px_25px_rgba(187,187,187,0.25)]
             flex flex-wrap justify-center  items-center gap-[1.5rem]
             md:gap-0 md:flex-nowrap  md:justify-around md:items-end ">
@@ -336,7 +334,7 @@
     </div>
 
     <!-- section 5 -->
-    <div class="esang-section5 md:max-w-[1080px] mt-60  mx-4 xl:mx-auto">
+    <div class="esang-section5 md:max-w-[1080px] mt-60  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -355,7 +353,7 @@
 
 
     <!-- section6 -->
-    <div class="esang-section6 bg-[rgba(42,187,156,0.1)]  md:max-w-[1080px] p-4 mx-4 mt-4 xl:mx-auto rounded-[10px]">
+    <div class="esang-section6 bg-[rgba(42,187,156,0.1)]  md:max-w-[1080px] p-4 mx-4 mt-4 lg:mx-auto rounded-[10px]">
       <p class="text-[22px] font-['IranYekanbakhfat']  text-[#2abb9c] text-center ">رتبه هوش شما</p>
       <div class="text-center my-8" dir="ltr">
         <span class="esange-score">5</span>
@@ -369,7 +367,7 @@
 
     <!-- section7 -->
     <div
-      class="esang-section7  md:max-w-[1080px] flex flex-col lg:flex-row justify-center items-center lg:justify-between  mx-4 mt-8  xl:mx-auto ">
+      class="esang-section7  md:max-w-[1080px] flex flex-col lg:flex-row justify-center items-center lg:justify-between  mx-4 mt-8  md:mx-auto ">
       <div class="esang-box">
         <div class="text-center bg-[#334155] p-8 text-white rounded-tr-[10px] rounded-tl-[10px]">
           <p class="font-black text-[48px]">470</p>
@@ -416,7 +414,7 @@
     </div>
 
     <!-- section8 -->
-    <div class="esang-section8 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section8 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
         <img src="./Assests/img/1.svg" alt="" class="px-3">
@@ -433,7 +431,7 @@
     </div>
 
     <!--section9 -->
-    <div class="esang-section9 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section9 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="">
         <h3 class="text-[#334155] font-['IranYekanbakhfat'] text-xl md:text-[24px]"> طبقه بندی هوش شما </h3>
       </div>
@@ -589,7 +587,7 @@
     </div>
 
     <!-- section 11 -->
-    <div class="esang-section11 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section11 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="">
         <h3 class="text-[#334155] font-['iranYekanbakhfat'] text-xl md:text-[24px]"> وضعیت شما در طبقه بندی های دیگر
         </h3>
@@ -661,7 +659,7 @@
 
 
     <!-- section12 -->
-    <div class="esang-section8 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section8 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
         <img src="./Assests/img/1.svg" alt="" class="px-3">
@@ -718,7 +716,7 @@
 
 
     <!-- section13 -->
-    <div class="esang-section13 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section13 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -737,7 +735,7 @@
 
 
     <!-- section14 -->
-    <div class="esang-section14 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section14 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center">
         <h3 class="text-[#334155] font-['iranYekanbakhfat'] text-xl md:text-[28px] "> براساس نمودار تراکمی </h3>
       </div>
@@ -757,7 +755,7 @@
     </div>
 
     <!-- section15 -->
-    <div class="esang-section15 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section15 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center ">
         <h3 class="text-[#334155] font-[iranYekanbakhfat] text-xl md:text-[28px] "> براساس نمودار نرمال </h3>
       </div>
@@ -775,7 +773,7 @@
     </div>
 
     <!-- section16 -->
-    <div class="esang-section16 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section16 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center">
         <h3 class="text-[#334155] font-['iranYekanbakhfat'] text-xl md:text-[28px] "> جمع بندی نهایی نمودارها </h3>
       </div>
@@ -791,7 +789,7 @@
     </div>
 
     <!-- section17 -->
-    <div class="esang-section17 md:max-w-[1080px] mt-12  mx-4 xl:mx-auto grid lg:grid-cols-3 gap-4">
+    <div class="esang-section17 md:max-w-[1080px] mt-12  mx-4 lg:mx-auto grid lg:grid-cols-3 gap-4">
       <div class="esang-box17">
         <div class="esange-squreLittle">
           <p class="font-['iranYekanbakhfat'] text-[48px]">80</p>
@@ -838,7 +836,7 @@
 
 
     <!-- section18 -->
-    <div class="esang-section18 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section18 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
         <img src="./Assests/img/1.svg" alt="" class="px-3">
@@ -878,7 +876,7 @@
     </div>
 
     <!-- section19 -->
-    <div class="esang-section19 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section19 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -954,7 +952,7 @@
     </div>
 
     <!-- section20 -->
-    <div class="esang-section20 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section20 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
         <img src="./Assests/img/1.svg" alt="" class="px-3">
@@ -1017,7 +1015,7 @@
     </div>
 
     <!-- section21 -->
-    <div class="esang-section21 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section21 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -1109,7 +1107,7 @@
       </div>
     </div>
     <!-- section22-->
-    <div class="esang-section22 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section22 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
         <img src="./Assests/img/1.svg" alt="" class="px-3">
@@ -1185,7 +1183,7 @@
     </div>
 
     <!-- section23 -->
-    <div class="esang-section23 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section23 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -1201,7 +1199,7 @@
         این نمره شما در طبقه ی افراد تیزهوش قرار دارید. شما از لحاظ هوشی بالاتر از متوسط افراد جامعه قرار دارید.
       </p>
 
-      <!-- slider in tablet and descktop -->
+      <!--  img tablet and descktop -->
       <div class="hidden md:flex">
         <div class="">
           <img src="./Assests/img/ta.svg" alt="">
@@ -1217,31 +1215,31 @@
       <!-- slider in mobile -->
       <div class="flex md:hidden">
         <div class="swiper mySwiper2 mt-12">
-          <div class="swiper-wrapper mb-[5rem]">
+          <div class="swiper-wrapper mb-[2rem]">
             <div class="swiper-slide">
               <div class="card-content">
-                <div class="image">
+                <div class="image flex items-center justify-center">
                   <img src="./Assests/img/ta.svg" alt="">
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card-content">
-                <div class="image">
+                <div class="image flex items-center justify-center">
                   <img src="./Assests/img/ta.svg" alt="">
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card-content">
-                <div class="image">
+                <div class="image flex items-center justify-center">
                   <img src="./Assests/img/ta.svg" alt="">
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="card-content">
-                <div class="image">
+                <div class="image flex items-center justify-center">
                   <img src="./Assests/img/ta.svg" alt="">
                 </div>
               </div>
@@ -1257,7 +1255,7 @@
     </div>
 
     <!-- section24 -->
-    <div class="esang-section24 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section24 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -1336,7 +1334,7 @@
 
 
     <!-- section25 -->
-    <div class="esang-section25 md:max-w-[1080px] mt-28  mx-4 xl:mx-auto">
+    <div class="esang-section25 md:max-w-[1080px] mt-28  mx-4 lg:mx-auto">
 
       <div class="flex items-center relative">
         <div class="esange-linerback absolute"></div>
@@ -1350,7 +1348,7 @@
         افراد تیزهوش قرار دارید. شما از لحاظ هوشی بالاتر از متوسط افراد جامعه قرار دارید.
       </p>
 
-      <div class="esange-pdf">
+      <div class="esange-pdf ">
         <a download href="./Assests/pdf//تست-شخصیت-شناسی-هالند.pdf"
           class="flex flex-col justify-around items-center p-5">
           <img src="./Assests/img/pdf.svg" class="mx-auto my-3" alt="">
@@ -1361,7 +1359,7 @@
     </div>
 
     <!-- section26 -->
-    <div class="esange-section26 md:max-w-[1080px] mt-20 mx-4 xl:mx-auto mb-12">
+    <div class="esange-section26 md:max-w-[1080px] mt-20 mx-4 lg:mx-auto mb-12">
       <div class="swiper mySwiper1">
         <div class="swiper-wrapper ">
           <!-- 1 -->
